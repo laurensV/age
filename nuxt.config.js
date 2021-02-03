@@ -20,7 +20,7 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', hid: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', hid: 'icon', type: 'image/x-icon', href: 'favicon.ico' }
     ]
   },
 

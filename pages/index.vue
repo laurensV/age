@@ -79,7 +79,7 @@ export default {
     return {
       title: this.name,
       link: [
-        { rel: 'icon', hid: 'icon', type: 'image/x-icon', href: '/favicon-elephant.ico' }
+        { rel: 'icon', hid: 'icon', type: 'image/x-icon', href: 'favicon-elephant.ico' }
       ]
     }
   },
