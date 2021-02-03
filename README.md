@@ -1,4 +1,5 @@
-# age
+# Age website
+Website to display current age for baby/kids with interactive fireworks on their birthday.
 
 ## Build Setup
 
@@ -13,8 +14,12 @@ $ npm run dev
 $ npm run build
 $ npm run start
 
-# generate static project
+# generate static project (into the dist folder)
 $ npm run generate
+
+# deploy static dist folder to gh-pages
+$ npm run deploy
+
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
