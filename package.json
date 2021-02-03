@@ -15,6 +15,7 @@
     "nuxt": "^2.14.12"
   },
   "devDependencies": {
+    "@nuxtjs/moment": "^1.6.1",
     "node-sass": "^5.0.0",
     "push-dir": "^0.4.1",
     "sass-loader": "^10.1.1"
