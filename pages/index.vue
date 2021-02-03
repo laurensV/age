@@ -1,5 +1,6 @@
 <template>
   <div class="container" id="content">
+    <dots />
     <img :src="require('@/assets/img/elephant.png')" class="main-picture" />
     <h1 class="name">{{name}}</h1>
     <div class="age" v-if="age">
@@ -29,8 +30,12 @@ const dateOfBirth = "2019-10-07";
 /*********************
  * CHANGE INFO ABOVE *
  * *******************/
+import Dots from '~/components/Dots';
 
 export default {
+  components: {
+    Dots
+  },
   data () {
     return {
       name: name,
