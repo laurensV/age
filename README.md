@@ -1,5 +1,12 @@
-# Age website
+# Age website with fireworks on birthday
 Website to display current age for baby/kids with interactive fireworks on their birthday.
+
+## Live Demo
+https://laurensv.github.io/age/
+
+## Screenshots
+![Boy Version](docs/screenshot_boy.png?raw=true "Boy Version")
+![Fireworks on birthday](docs/screenshot_fireworks.png?raw=true "Fireworks on birthday")
 
 ## Build Setup
 
