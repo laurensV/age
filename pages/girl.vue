@@ -1,9 +1,9 @@
 <template>
   <div>
-    <dots />
+    <dots :theme="'girl'" />
     <fireworks v-if="birthday" />
     <div class="container" id="content">
-      <img :src="require('@/assets/img/elephant.png')" class="main-picture" />
+      <img :src="require('@/assets/img/flamingo.png')" class="main-picture" />
       <h1 class="name">{{name}}</h1>
       <div class="congrats" v-if="birthday">Congratulations!</div>
       <div class="age" v-if="age">
@@ -18,7 +18,7 @@
           {{age.hours}}h:{{age.minutes}}m:{{age.seconds}}s
         </small>
       </div>
-      <nuxt-link to="/girl" class="sibling">Girl Version</nuxt-link>
+      <nuxt-link to="/" class="sibling">Boy Version</nuxt-link>
     </div>
   </div>
 </template>
@@ -80,7 +80,7 @@ export default {
     return {
       title: this.name,
       link: [
-        { rel: 'icon', hid: 'icon', type: 'image/x-icon', href: 'favicon-elephant.ico' }
+        { rel: 'icon', hid: 'icon', type: 'image/x-icon', href: 'favicon-flamingo.ico' }
       ]
     }
   },
@@ -92,19 +92,19 @@ export default {
 
 <style lang="scss" scoped>
   #content {
-    color: $primary-boy;
+    color: $primary-girl;
     padding: 50px 5px;
     animation: fadein 1s;
     text-align: center;
   }
 
   .main-picture {
-    width: 250px;
+    width: 150px;
     max-width: 100%;
   }
 
   .sibling {
-    color: $primary-girl;
+    color: $primary-boy;
     position: fixed;
     bottom:5px;
     font-size: 20px;
@@ -113,6 +113,7 @@ export default {
   }
 
   .name {
+    margin-top: 5px;
     font-size: 80px;
   }
   .age {

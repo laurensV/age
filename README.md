@@ -5,7 +5,11 @@ Website to display current age for baby/kids with interactive fireworks on their
 https://laurensv.github.io/age/
 
 ## Screenshots
+#### Boy version
 ![Boy Version](docs/screenshot_boy.png?raw=true "Boy Version")
+#### Girl version
+![Girl Version](docs/screenshot_girl.png?raw=true "Girl Version")
+#### Fireworks on birthday
 ![Fireworks on birthday](docs/screenshot_fireworks.png?raw=true "Fireworks on birthday")
 
 ## Build Setup

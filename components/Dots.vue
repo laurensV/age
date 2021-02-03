@@ -140,6 +140,7 @@ export default {
       context: null
     }
   },
+  props: ['theme'],
   computed: {
 
   },
@@ -148,6 +149,22 @@ export default {
     this.context = this.canvas.getContext("2d");
     this.canvas.width = window.innerWidth;
     this.canvas.height = window.innerHeight;
+
+    if (this.theme === 'girl') {
+      colors = ['rgba(255, 158, 162,' + opacity + ')',       // an array of rgb colors for the circles
+        'rgba(253, 203, 233,' + opacity + ')',
+        'rgba(249, 211, 130,' + opacity + ')',
+        'rgba(222, 78, 78,' + opacity + ')',
+        'rgba(247, 222, 231,' + opacity + ')'
+      ]
+    } else {
+      colors = ['rgba(101, 162, 164,' + opacity + ')',       // an array of rgb colors for the circles
+        'rgba(157, 193, 189,' + opacity + ')',
+        'rgba(113, 158, 151,' + opacity + ')',
+        'rgba(90, 142, 149,' + opacity + ')',
+        'rgba(174, 192, 186,' + opacity + ')'
+      ]
+    }
 
     buildArray();
     animate();
