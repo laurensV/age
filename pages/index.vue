@@ -1,11 +1,11 @@
 <template>
   <div>
-    <dots />
-    <fireworks v-if="birthday" />
+    <fireworks v-if="birthday || fireworks" />
+    <dots v-else :theme="'boy'" />
     <div class="container" id="content">
-      <img :src="require('@/assets/img/elephant.png')" class="main-picture" />
+      <img :src="require('@/assets/img/elephant.png')" width="250px" />
       <h1 class="name">{{name}}</h1>
-      <div class="congrats" v-if="birthday">Congratulations!</div>
+      <div class="congrats" v-if="birthday || fireworks">Congratulations!</div>
       <div class="age" v-if="age">
         <h2 class="years" v-if="age.years > 0">{{age.years}}&nbsp; year<span v-if="age.years > 1">s</span></h2>
         <div>
@@ -18,6 +18,7 @@
           {{age.hours}}h:{{age.minutes}}m:{{age.seconds}}s
         </small>
       </div>
+      <img class="icon trigger-fireworks" @click="fireworks = !fireworks" src="~/assets/img/icons/fireworks.svg" />
       <nuxt-link to="/girl" class="sibling">Girl Version</nuxt-link>
     </div>
   </div>
@@ -48,7 +49,8 @@ export default {
     return {
       name: name,
       dateOfBirth: this.$moment(dateOfBirth),
-      timer: null
+      timer: null,
+      fireworks: false
     }
   },
   computed: {
@@ -93,14 +95,6 @@ export default {
 <style lang="scss" scoped>
   #content {
     color: $primary-boy;
-    padding: 50px 5px;
-    animation: fadein 1s;
-    text-align: center;
-  }
-
-  .main-picture {
-    width: 250px;
-    max-width: 100%;
   }
 
   .sibling {
@@ -112,20 +106,20 @@ export default {
     padding: 3px;
   }
 
-  .name {
-    font-size: 80px;
-  }
   .age {
     font-size: 30px;
+  }
+  .trigger-fireworks {
+    position: fixed;
+    bottom:5px;
+    left:5px;
+    padding: 3px;
+    cursor: pointer;
   }
   .congrats {
     font-size: 50px;
     margin: 0;
     padding: 0;
-    color: #de4e4e;
-  }
-  @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    color: red;
   }
 </style>

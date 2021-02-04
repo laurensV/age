@@ -1,0 +1,40 @@
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 80px;
+}
+h2 {
+  font-size: 45px;
+}
+
+.icon {
+  width: 32px;
+  height: auto;
+  &.icon-16 {
+    width: 16px;
+  }
+  &.icon-32 {
+    width: 32px;
+  }
+  &.icon-64 {
+    width: 64px;
+  }
+  &.icon-128 {
+    width: 128px;
+  }
+}
+#content {
+  color: $primary-boy;
+  padding: 50px 5px;
+  animation: fadein 1s;
+  text-align: center;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+

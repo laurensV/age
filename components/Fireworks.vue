@@ -144,6 +144,8 @@
     }
   }
 
+let requestId = null;
+
 export default {
   data () {
     return {
@@ -163,7 +165,7 @@ export default {
     document.ontouchstart = evt => birthday.onClick(evt)
 
     ;(function loop(){
-      requestAnimationFrame(loop)
+      requestId = requestAnimationFrame(loop)
 
       let now = timestamp()
       let delta = now - then
@@ -174,6 +176,10 @@ export default {
   },
 
   beforeDestroy () {
+    if (requestId) {
+      window.cancelAnimationFrame(requestId);
+      requestId = undefined;
+    }
   },
 }
 </script>
