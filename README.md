@@ -1,4 +1,4 @@
-# Age website with fireworks on birthday
+# Age website with fireworks on birthday 
 Website to display current age for baby/kids with interactive fireworks on their birthday.
 
 ## Live Demo
