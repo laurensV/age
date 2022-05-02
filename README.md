@@ -15,7 +15,7 @@ https://laurensv.github.io/age/
 ## Build Setup
 
 ```bash
-# install dependencies from package-lock
+# install dependencies from package-lock.json
 $ npm ci
 
 # serve with hot reload at localhost:3000
