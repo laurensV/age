@@ -10,7 +10,7 @@ https://laurensv.github.io/age/
 #### Girl version
 ![Girl Version](docs/screenshot_girl.png?raw=true "Girl Version")
 #### Fireworks on birthday
-![Fireworks on birthday](docs/screenshot_fireworks.png?raw=true "Fireworks on birthday")
+![Fireworks on birthday](docs/screenshot_fireworks.gif?raw=true "Fireworks on birthday")
 
 ## Build Setup
 
